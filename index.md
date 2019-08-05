@@ -12,16 +12,17 @@ You can use direct link:
 ```html
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 ```
-You you need, get to the official jQuery site to another options: [Link to jQuery](https://jquery.com/download/).
+If you need, get to the official jQuery site to another download options for your project:
+[Link to jQuery](https://jquery.com/download/).
 
+### How to use
 
 ```html
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="your-folder/json-render.js"></script>
 ```
 
-### Json Array Data
-
+### HOW TO LISTING DATA (JSON ARRAY ITEMS)
 
 ```js
 // Simple use - showing a list of data
@@ -34,6 +35,23 @@ var your_content = $('.your-content-class');
 
  your_content.RenderJsonList();
 
+
+```
+
+```html
+<!-- HTML Structure -->
+<section data-simple-json-container>
+  <div data-simple-json-data-source>
+    <div class="your-content-class" data-simple-json-item="{@id}">
+      <h4 id="{@id}">{@name}</h4>
+      <p>{@description}</p>
+      <hr>
+    </div>  
+  </div>
+</section>
+```
+
+```js
 // JSON used in this sample
 var jsonReference = 
 {
@@ -69,22 +87,10 @@ var jsonReference =
         ]    
     }
 };
-
-```
-```html
-<!-- HTML Structure -->
-<section data-simple-json-container>
-  <div data-simple-json-data-source>
-    <div class="your-content-class" data-simple-json-item="{@id}">
-      <h4 id="{@id}">{@name}</h4>
-      <p>{@description}</p>
-      <hr>
-    </div>  
-  </div>
-</section>
 ```
 
-### Json Single Data
+
+### HOW TO DISPLAY SINGLE DATA: Json Single Data
 
 If you need display just a single data, follow this steps:
 
@@ -99,14 +105,6 @@ single.RenderJson({
 
 single.RenderJsonItem();
 
-// JSON used in this sample
-var singleJson = 
-{
-    result:
-    {
-        id: 1, name: 'Andreia', dataNascimento: '03/01/1988'   
-    }
-}
 
 ```
 ```html
@@ -120,7 +118,19 @@ var singleJson =
 </section>
 ```
 
-### Json Data with MultiLeves
+```js
+// JSON used in this sample
+var singleJson = 
+{
+    result:
+    {
+        id: 1, name: 'Andreia', dataNascimento: '03/01/1988'   
+    }
+}
+
+```
+
+### DISPLAYING DATA WITH MULTILEVELS
 
 If you need display data with multileves, like:
 
@@ -158,58 +168,8 @@ levels.RenderJson({
 levels.RenderJsonList();
 
 
-JSON used in this sample
-
-//Json Sample data 
-var json3Levels = 
-{
-    result:
-    {
-        people:
-        [
-            {
-                id: 1,
-                name: 'Dorian',
-                //This person doesn´t have any book.
-            },
-            {
-                id: 2,
-                name: 'Paul',
-                livros:
-                [
-                    {
-                        id: 7,
-                        title: 'A Menina que Roubava Livros',
-                        capitulos:
-                        [
-                            {id: 100, name: 'Chapter 1'},
-                            {id: 101, name: 'Chapter 2'},
-                            {id: 102, name: 'Chapter 3'},
-                        
-                        ]
-                    },
-                    {id: 9, title: 'O Símbolo Sagrado'
-                    //Chapters list not set to this book
-                  },
-                ]
-            },
-            {
-                id: 2,
-                name: 'John',
-                livros:
-                [
-                    {id: 11, title: 'Poder sem Limites', capitulos:[]},
-                    {id: 12, title: 'O Segredo'},
-                    {id: 13, title: 'A Volta dos Que Não Foram'},
-
-                ]
-            }
-
-        ]
-    }
-}
-
 ```
+
 ```html
 <!-- HTML Structure -->
   
@@ -260,6 +220,59 @@ var json3Levels =
       </div>
     </section>
 ```
+
+```js
+
+//JSON used in this sample
+var json3Levels = 
+{
+    result:
+    {
+        people:
+        [
+            {
+                id: 1,
+                name: 'Dorian',
+                //This person doesn´t have any book.
+            },
+            {
+                id: 2,
+                name: 'Paul',
+                livros:
+                [
+                    {
+                        id: 7,
+                        title: 'A Menina que Roubava Livros',
+                        capitulos:
+                        [
+                            {id: 100, name: 'Chapter 1'},
+                            {id: 101, name: 'Chapter 2'},
+                            {id: 102, name: 'Chapter 3'},
+                        
+                        ]
+                    },
+                    {id: 9, title: 'O Símbolo Sagrado'
+                    //Chapters list not set to this book
+                  },
+                ]
+            },
+            {
+                id: 2,
+                name: 'John',
+                livros:
+                [
+                    {id: 11, title: 'Poder sem Limites', capitulos:[]},
+                    {id: 12, title: 'O Segredo'},
+                    {id: 13, title: 'A Volta dos Que Não Foram'},
+
+                ]
+            }
+
+        ]
+    }
+}
+```
+
 
 
 #### Header 4

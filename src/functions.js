@@ -1,3 +1,8 @@
+/*
+* This script is to test calls to the Json Render JS Plugin.
+* Use the 'local' folder to test in your local environment.
+* The json-data-sample.js file have json data sample to test.
+*/
 function ShowMenu()
 {
     let menu = $('.json-template-menu');
@@ -37,19 +42,27 @@ function ShowSingle()
 
 function ShowReference()
 {
+
     reference = $('.template-reference');
 
     reference.RenderJson({
         data: jsonReference.result,
         mainKey: 'items',
 
+        //All events sample
         complete: function()
         {
+            $('.container-reference').fadeIn();
+            //console.log('acabou');
             //console.log($(this));
         },
 
         init: function()
         {
+
+
+            //console.log($(this));
+            //console.log('iniciando');
             //console.log($(this));
             //console.log(data);
             // console.log('iniciou');
@@ -58,8 +71,9 @@ function ShowReference()
 
         onRenderKeyValue: function(key, value)
         {
-            // console.log($(this));
-            // console.log(key);
+
+            //$(this)
+             console.log(key);
             // console.log(value);
             // console.log(value);
         },
@@ -98,8 +112,8 @@ $(document).ready(function(e){
 
     // ShowMenu();
     // ShowMultilevels();
-    // ShowReference();
-    ShowSingle();
+     ShowReference();
+    //ShowSingle();
 
 
 
