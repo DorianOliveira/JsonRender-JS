@@ -22,8 +22,8 @@ This is a simple JS Plugin to render JSON Content, using just HTML + Javascript.
 
 ### Header 3
 
-```html
-<p>Teste</p>
+
+
 ```js
 // Simple use
  var your_content = $('.your-content-class');
