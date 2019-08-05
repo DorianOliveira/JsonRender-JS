@@ -3,7 +3,7 @@ layout: default
 ---
 # JSON RENDER JS PLUGIN
 
-This is a simple JS Plugin to render JSON Content, using just pure and simple HTML + Javascript.
+This is a simple JS Plugin to render JSON Content, using just pure and simple HTML + Javascript
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ If you need, get to the official jQuery site to another download options for you
 <script src="your-folder/json-render.js"></script>
 ```
 
-### HOW TO LISTING DATA (JSON ARRAY ITEMS)
+### HOW TO LIST DATA (JSON ARRAY ITEMS)
 
 ```js
 // Simple use - showing a list of data
