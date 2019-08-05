@@ -12,16 +12,38 @@ You can use direct link:
 ```html
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 ```
-Or get to jQuery oficial site to another options: [Link to jQuery](https://jquery.com/download/).
+Or get to oficial jQuery site to another options: [Link to jQuery](https://jquery.com/download/).
 
-### Header 3
+
+```html
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="your-folder/json-render.js"></script>
+```
+
+### Json Array Data
 
 ```js
-// Simple use
- var your_content = $('.your-content-class');
+// Simple use - showing a list of data
+var your_content = $('.your-content-class');
+ 
  your_content.RenderJson({
     data: your_json,
     mainKey: 'key_name',
+  });
+
+ your_content.RenderJsonList();
+
+```
+```html
+<section data-simple-json-container>
+  <div data-simple-json-data-source>
+    <div class="your-content-class" data-simple-json-item="{@id}">
+      <h4 id="{@id}">{@name}</h4>
+      <p>{@description}</p>
+      <hr>
+    </div>  
+  </div>
+</section>
 ```
 
 ```ruby
