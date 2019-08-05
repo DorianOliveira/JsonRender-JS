@@ -10,9 +10,9 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# JSON RENDER JS
+# Header 1
 
-This is a simple JS Plugin to render JSON Content, using just HTML + Javascript.
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
 ## Header 2
 
@@ -22,14 +22,12 @@ This is a simple JS Plugin to render JSON Content, using just HTML + Javascript.
 
 ### Header 3
 
-```html
-<p>Teste</p>
 ```js
-// Simple use
- var your_content = $('.your-content-class');
- your_content.RenderJson({
-    data: your_json,
-    mainKey: 'key_name',
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
 ```
 
 ```ruby
