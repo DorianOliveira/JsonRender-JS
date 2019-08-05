@@ -1,28 +1,20 @@
 ---
 layout: default
 ---
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# JSON RENDER JS
+# JSON RENDER JS PLUGIN
 
 This is a simple JS Plugin to render JSON Content, using just HTML + Javascript.
 
-## Header 2
+## Getting Started
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+The Json Render JS Plugin needs jQuery library.
+You can use direct link: 
+```html
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+```
+Or get to jQuery oficial site to another options: [Link to jQuery](https://jquery.com/download/).
 
 ### Header 3
-
-
 
 ```js
 // Simple use
