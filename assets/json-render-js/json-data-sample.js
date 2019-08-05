@@ -138,9 +138,7 @@ var singleJson =
 {
     result:
     {
-
-        id: 1, name: 'Andreia', dataNascimento: '03/01/1988'
-        
+        id: 1, name: 'Andréas', dataNascimento: '03/01/1992'   
     }
 }
 
@@ -150,10 +148,10 @@ var jsonMenu =
     {
         items:
         [
-            {title: 'Home', link: '/projetos/php2/'},
-            {title: '3 Levels', link: '/projetos/php2/screens/levels.php'},
-            {title: 'Reference', link: '/projetos/php2/screens/reference.php'},
-            {title: 'Single', link: '/projetos/php2/screens/single.php'}
+            {title: 'Home', link: '/projetos/jsonrender/local/'},
+            {title: 'Multilevels', link: '/projetos/jsonrender/local/multilevels.html'},
+            {title: 'Reference', link: '/projetos/jsonrender/local/reference.html'},
+            {title: 'Single', link: '/projetos/jsonrender/local/single.html'}
         ]
         
     }

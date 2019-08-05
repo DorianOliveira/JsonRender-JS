@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+      <meta charset="utf-8">
+      <title>Testes</title>
+      <link rel="stylesheet" href="/projetos/jsonrender/assets/bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="/projetos/jsonrender/local/styles.css">
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Simple Json JS Framework</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#main-navbar"
+        aria-controls="main-navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main-navbar" data-simple-json-container="menu-principal">
+
+
+        <ul class="navbar-nav mr-auto" data-simple-json-data-source>
+
+          <li
+            class="nav-item json-template-menu"
+            data-simple-json-item>
+              <a class="nav-link" href="{@link}"> {@title}</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main role="main" class="container">
+      <h2>Reference</h2>
+<p>Check this content to learn and apply correctly all available options in the Simple Json JS Framework. Enjoy!</p>
+
+<section class="row">
+  <div class="col-md-8">
+    <section class="default-box container-reference" data-simple-json-container="template-reference">
+      
+      <div data-simple-json-data-source>
+        <div class="template-reference" data-simple-json-item="{@id}">
+          <h4 id="{@id}">{@name}
+
+          </h4>
+          <p>{@description}</p>
+          <hr>
+        </div>  
+      </div>
+    </section>
+  </div>
+</section>
+    <footer class="footer">2019 - all rights reserved</footer>
+    </main>
+
+    
+
+    <script src="/projetos/jsonrender/assets/json-render-js/json-data-sample.js"></script>
+    <script src="/projetos/jsonrender/assets/json-render-js/jquery-3.4.1.min.js"></script>
+    <script src="/projetos/jsonrender/assets/bootstrap/js/bootstrap.js"></script>
+    <script src="/projetos/jsonrender/assets/json-render-js/json-render.js"></script>
+    
+    <script src="/projetos/jsonrender/assets/json-render-js/functions.js"></script>
+    
+    
+  </body>
+</html>

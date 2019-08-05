@@ -84,6 +84,7 @@
 
         self.RenderJsonItem = function()
         {
+
             self.isList = false;
             Init();
         }
