@@ -167,7 +167,6 @@ levels.RenderJson({
 
 levels.RenderJsonList();
 
-
 ```
 
 ```html
@@ -222,7 +221,6 @@ levels.RenderJsonList();
 ```
 
 ```js
-
 //JSON used in this sample
 var json3Levels = 
 {
