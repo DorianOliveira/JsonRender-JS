@@ -3,7 +3,7 @@ layout: default
 ---
 # JSON RENDER JS PLUGIN
 
-This is a simple JS Plugin to render JSON Content, using just HTML + Javascript.
+This is a simple JS Plugin to render JSON Content, using just pure and simple HTML + Javascript.
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ You can use direct link:
 ```html
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 ```
-Or get to oficial jQuery site to another options: [Link to jQuery](https://jquery.com/download/).
+You you need, get to the official jQuery site to another options: [Link to jQuery](https://jquery.com/download/).
 
 
 ```html
@@ -22,19 +22,57 @@ Or get to oficial jQuery site to another options: [Link to jQuery](https://jquer
 
 ### Json Array Data
 
+
 ```js
 // Simple use - showing a list of data
 var your_content = $('.your-content-class');
  
  your_content.RenderJson({
-    data: your_json,
+    data: jsonReference.result,
     mainKey: 'key_name',
   });
 
  your_content.RenderJsonList();
 
+// JSON used in this sample
+var jsonReference = 
+{
+    result:
+    {
+        items:
+        [
+            {
+                id: 1,
+                name: 'data-simple-json-data-source',
+                description : 'Determine if the element is a DATA SOURCE. Is the container of the ITEMS'
+            },
+            {
+                id: 2,
+                name: 'data-simple-json-container',
+                description : 'Default container of the contents. All the elements should be put within this elements.'
+            },
+            {
+                id: 3,
+                name: 'data-simple-json-item',
+                description : 'The element template. This elements will be replicated for each element in the DATA SOURCE array. Allow CONTAINER and DATA SOURCE nested.'
+            },
+            {
+                id: 4,
+                name: 'data-simple-json-empty-data',
+                description: 'This element will be showed if no item reached from the DATA SOURCE'
+            },
+            {
+                id: 5,
+                name: 'data-simple-json-remove-on-empty',
+                description: 'This DataSet attribute says that element should be hide weather no elements found in DATA SOURCE'
+            }
+        ]    
+    }
+};
+
 ```
 ```html
+<!-- HTML Structure -->
 <section data-simple-json-container>
   <div data-simple-json-data-source>
     <div class="your-content-class" data-simple-json-item="{@id}">
@@ -46,12 +84,6 @@ var your_content = $('.your-content-class');
 </section>
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
 
 #### Header 4
 
@@ -130,10 +162,8 @@ end
 <dd>Green</dd>
 </dl>
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
 
 ```
-The final element.
+Json Render JS Plugin 2019
+
 ```
